@@ -20,7 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('no-scroll'); 
     }
     var loadingScreen = document.querySelector(".loadingScreen");
-    window.addEventListener('load', function() {
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+
+      }
+    sleep(800).then(()=>window.addEventListener('load', function() {
         loadingScreen.style.display = 'none';
-      })
+      }))
 });
