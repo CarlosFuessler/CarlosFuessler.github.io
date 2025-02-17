@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return new Promise(resolve => setTimeout(resolve, ms));
 
       }
-    sleep(800).then(()=>window.addEventListener('load', function() {
+    sleep(3000).then(()=>window.addEventListener('load', function() {
         loadingScreen.style.display = 'none';
       }))
 });
