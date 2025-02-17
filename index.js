@@ -10,13 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
         
         hamMenu.classList.toggle("active");
         offscreen.classList.toggle("active");
-        body.classList.toggle('no-scroll'); // Hinzugefügt
+        body.classList.toggle('no-scroll'); 
     }
 
     function offScreenFun() {
         
         hamMenu.classList.toggle("active");
         offscreen.classList.toggle("active");
-        body.classList.toggle('no-scroll'); // Hinzugefügt
+        body.classList.toggle('no-scroll'); 
     }
+    var loadingScreen = document.querySelector(".loadingScreen");
+    window.addEventListener('load', function() {
+        loadingScreen.style.display = 'none';
+      })
 });
