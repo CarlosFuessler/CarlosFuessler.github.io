@@ -27,6 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', function() {
         this.setTimeout(function(){
             loadingScreen.style.display = 'none';
-        },900);
+        },1000);
     })
 });
