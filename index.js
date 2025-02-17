@@ -18,12 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         hamMenu.classList.toggle("active");
         offscreen.classList.toggle("active");
         body.classList.toggle('no-scroll'); 
+    }
     var loadingScreen = document.querySelector(".loadingScreen");
-   
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+
+      }
     window.addEventListener('load', function() {
         this.setTimeout(function(){
             loadingScreen.style.display = 'none';
-        },1000);
-    }) }
-   
+        },900);
+    })
 });
