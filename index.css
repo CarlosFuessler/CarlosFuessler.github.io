@@ -1,30 +1,30 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;    
-  display:flex;
-  background-color: #FAF5EF;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  background-color: #faf5ef;
   cursor: pointer;
-  
 }
-.header{
+.header {
   margin-top: 8px;
   display: flex;
   justify-content: center;
-  align-items: center; 
-  background-color: #FAF5EF;
+  align-items: center;
+  background-color: #faf5ef;
   width: 100%;
   height: 45px;
-  padding:20px;
+  padding: 20px;
   position: absolute;
 }
 
-.header a{
+.header a {
   display: flex;
   font-size: 25px;
   font-weight: 900;
   text-align: center;
   padding: 100px;
+  z-index: 1;
 }
-.title{
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,17 +32,17 @@ body{
   font-weight: 800;
   color: black;
 }
-.toggle{
+.toggle {
   margin-bottom: 6px;
   display: flex;
   flex-direction: column;
   width: 35px;
   cursor: pointer;
-  position: absolute; 
+  position: absolute;
   left: 10px;
 }
-.toggle span{
-  display:flex;
+.toggle span {
+  display: flex;
   height: 5px;
   width: 100%;
   background-color: black;
@@ -53,71 +53,64 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: .5s ease;
-  z-index: 103;
+  transition: 0.5s ease;
+  z-index: 11;
 }
 
 .toggle1 span:nth-child(1) {
   top: 25%;
-  z-index: 103;
+  z-index: 11;
 }
 
 .toggle1 span:nth-child(3) {
   top: 75%;
-  z-index: 103;
+  z-index: 11;
 }
-
 
 .toggle1.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  z-index: 103;
- 
-
+  z-index: 11;
 }
 
 .toggle1.active span:nth-child(2) {
   opacity: 0;
-  z-index: 103;
+  z-index: 11;
 }
 
 .toggle1.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  z-index: 103;
-
+  z-index: 11;
 }
 .off-screen1 {
-  display:flex;
-  background-color: F5F5F5;
+  display: flex;
+  background-color: #dbd7d2;
   height: 100vh;
   width: 95%;
   max-width: 250px;
   position: fixed;
   top: 0;
   left: -450px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 3rem;
-  transition: .9s ease;
+  transition: 0.9s ease;
   border-radius: 25px;
   box-shadow: black 0px 0px 20px;
-  z-index: 101;
-
+  z-index: 10;
 }
 
 .off-screen1.active {
   left: 0;
-  z-index: 101;
-
+  z-index: 10;
 }
 .container {
   display: flex;
   width: 100%;
-  z-index: 102;
+  z-index: 1;
   margin-top: 200px;
   flex-direction: column;
 }
@@ -129,21 +122,20 @@ body{
   font-size: 18px;
   font-weight: 800;
   margin-left: 58px;
- 
+  z-index: 1;
 }
 
-.footer{
+.footer {
   display: flex;
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
-  background-color: #FAF5EF; 
-  justify-content: center; 
+  background-color: #faf5ef;
+  justify-content: center;
   margin-bottom: 30px;
   padding: 20px;
 }
-.footer img{
-
+.footer img {
   width: 30px;
   height: 30px;
   margin: 10px;
@@ -153,30 +145,34 @@ body{
   z-index: 5;
   width: 100%;
   height: 100vh;
-  background-color: #FAF5EF;
+  background-color: #faf5ef;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 105;
+  z-index: 100;
 }
 
 .loader {
-  display:flex;
+  display: flex;
   margin-top: 12px;
   width: 40px;
   aspect-ratio: 2;
-  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
-  background: 
-    var(--_g) 0%   50%,
-    var(--_g) 50%  50%,
-    var(--_g) 100% 50%;
-  background-size: calc(100%/3) 50%;
+  --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
   animation: l3 1s infinite linear;
 }
 @keyframes l3 {
-    20%{background-position:0%   0%, 50%  50%,100%  50%}
-    40%{background-position:0% 100%, 50%   0%,100%  50%}
-    60%{background-position:0%  50%, 50% 100%,100%   0%}
-    80%{background-position:0%  50%, 50%  50%,100% 100%}
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
 }
-
