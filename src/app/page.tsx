@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 function MyButton() {
   return (
@@ -11,7 +11,7 @@ function MyButton() {
 export default function Home() {
   return (
     <div >
-    <h1>Welcome</h1>
+    <h1>Welcome my name is carlos</h1>
     <MyButton />
   </div>
   );
