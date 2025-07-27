@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next"
 
-function Main_Container() {
+function Main_bg() {
   return (
     <div className="min-h-screen w-full bg-gray-600 flex">
         <div className="flex flex-row w-screen h-screen">
@@ -19,10 +19,21 @@ function Main_Container() {
 
   );
 }
+function Main_Container(){
+  return (
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-96 w-96 bg-gray-500 flex items-center justify-center z-20">
+    </div>
+  );
+}
 export default function Home() {
   return (
 
-    <Main_Container />
+    <div className="relative">
+        <Main_bg />
+        <Main_Container />
+        
+    </div>
+
  
   );
 }
