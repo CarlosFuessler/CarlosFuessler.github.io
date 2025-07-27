@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next"
+
 function Main_Container() {
   return (
     <div className="min-h-screen w-full bg-gray-600 flex">
