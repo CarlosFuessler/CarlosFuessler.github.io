@@ -1,16 +1,16 @@
-function MyButton() {
+function Main_Container() {
   return (
-    
-    <button>
-      Im a button
-    </button>
+
+    <div>
+      <h1>hello world</h1>
+    </div>
+
   );
 }
 export default function Home() {
   return (
-    <div >
-    <h1>Welcome my name is carlos</h1>
-    <MyButton />
-  </div>
+
+    <Main_Container />
+ 
   );
 }
