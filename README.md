@@ -1,1 +1,2 @@
-This is my portofoli with all infos to my projects!
+This is my portofolio with all infos to my projects!
+
