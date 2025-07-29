@@ -21,7 +21,8 @@ function Main_bg() {
 }
 function Main_Container(){
   return (
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-96 w-96 bg-gray-500 flex items-center justify-center z-20">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-96 w-96 bg-gray-500 flex items-center justify-center z-20 b">
+
     </div>
   );
 }
