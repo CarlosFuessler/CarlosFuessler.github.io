@@ -1,1 +1,0 @@
-This is my portofoli with all infos to my projects!
