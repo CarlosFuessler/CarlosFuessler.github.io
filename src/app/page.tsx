@@ -21,11 +21,17 @@ function Main_bg() {
 }
 function Main_Container(){
   return (
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-120 w-120 bg-gray-500 flex items-center justify-center z-20 b rounded-3xl shadow-2xl">
-
-    </div>
+  //className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-120 w-120 bg-gray-500 flex items-center justify-center z-20 b rounded-3xl shadow-2xl "
+  <div className="absolute top-10 left-1/2 transform -translate-x-1/2 w-96 h-20 flex items-center justify-center z-20 rounded-3xl">
+  <div className="flex flex-row gap-8">
+  <button className="bg-gray-500/30 backdrop-blur-md px-4 py-2 rounded-2xl text-white hover:bg-gray-400/40 border border-gray-300/20 shadow-lg">HOME</button>
+        <button className="bg-gray-500/30 backdrop-blur-md px-4 py-2 rounded-2xl text-white hover:bg-gray-400/40 border border-gray-300/20 shadow-lg">ABOUT</button>
+        <button className="bg-gray-500/30 backdrop-blur-md px-4 py-2 rounded-2xl text-white hover:bg-gray-400/40 border border-gray-300/20 shadow-lg">PROJECTS</button>
+  </div>
+</div>
   );
 }
+
 export default function Home() {
   return (
 
