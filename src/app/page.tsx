@@ -13,8 +13,8 @@ interface MainContainerProps {
 
 function Main_bg() {
   return (
-    <div className="min-h-screen w-full bg-gray-600 flex">
-        <div className="flex flex-row w-screen h-screen">
+    <div className="h-screen w-full flex z-10">
+        <div className="flex flex-row w-screen h-full">
           <div className="flex bg-amber-400 flex-1"></div>
           <div className="flex bg-amber-500 flex-1"></div>
           <div className="flex bg-amber-600 flex-1"></div>
@@ -49,10 +49,9 @@ function Main_Container({ onHomeClick, onAboutClick, onProjectClick } : MainCont
 
 function Home_Container() {
   return (
-    <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-64 bg-white/90 backdrop-blur-md flex items-center justify-center z-20 rounded-3xl shadow-2xl">
+    <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-white/90 backdrop-blur-md flex items-center justify-center z-20 rounded-3xl shadow-2xl">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Welcome Home!</h2>
-        <p className="text-gray-600">Das ist der Home Container</p>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Welcome!</h2>
       </div>
     </div>
   );
@@ -62,10 +61,14 @@ function Home_Container() {
 
 function About_Container() {
   return (
-    <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-64 bg-white/90 backdrop-blur-md flex items-center justify-center z-20 rounded-3xl shadow-2xl">
+    <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-64 bg-white/90 backdrop-blur-md flex items-center justify-center z-20 rounded-3xl shadow-2xl flex-col gap-7">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Welcome About!</h2>
-        <p className="text-gray-600">Das ist der About Container</p>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">About!</h2>
+        <p className="text-gray-600">I am a Programmer based in Germany.</p>
+        <p className="text-gray-600">This is my portfolio for future Applications etc...</p>
+      </div>
+      <div className="w-8">
+        <img src="assets/icon.png" alt="GitHub" className="cursor-pointer" onClick={() => window.location.href = "https://github.com/CarlosFuessler"} />
       </div>
     </div>
   );
@@ -75,10 +78,25 @@ function About_Container() {
 
 function Project_Container() {
   return (
-    <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-64 bg-white/90 backdrop-blur-md flex items-center justify-center z-20 rounded-3xl shadow-2xl">
+    <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-white/90 backdrop-blur-md flex items-center justify-center z-20 rounded-3xl shadow-2xl flex-col gap-10">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Welcome Project!</h2>
-        <p className="text-gray-600">Das ist der Project Container</p>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">My Projects!</h2>
+        <p className="text-gray-600">To see more detais about my Projects,</p>
+        <p className="text-gray-600">Check out my GitHub linked at the bottom!
+        </p>
+
+      </div>
+
+    <div className="text-center text-gray-600 flex-col">
+
+      <li> CarlOS my own little OS</li>
+      <li> Musicfinder my first Schoolproject</li>
+      <li> The Hexaboard a 3x2 keyboard </li>
+      
+    </div>
+
+      <div className="w-8">
+        <img src="assets/icon.png" alt="GitHub"className="cursor-pointer" onClick={() => window.location.href = "https://github.com/CarlosFuessler"}/>
       </div>
     </div>
   );
